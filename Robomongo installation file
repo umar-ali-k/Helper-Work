@@ -1,3 +1,0 @@
-tar xvf robomongo-0.9.0-rc7-linux-x86_64-2b7a8ca.tar.gz
-cd robomongo-0.9.0-rc7-linux-x86_64-2b7a8ca
-sudo mv -v bin/* /usr/local/bin && sudo mv -v lib/* /usr/local/lib

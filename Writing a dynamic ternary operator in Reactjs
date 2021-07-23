@@ -1,0 +1,27 @@
+Here documents is an array .
+It can be an empty aray also with no value.
+This is the correct way of making it dynamic
+
+
+
+{(documents && documents.length >= 1) ? (
+                        documents.map((doc) => (
+                          <div className="  flex items-center mr-4">
+                            <DocumentTextIcon
+                              className=" h-5 w-5 text-gray-900"
+                              aria-hidden="true"
+                            />
+                            <span className="ml-2 flex-1 ">{doc}</span>
+                          </div>
+                        ))
+                      ) : (
+                        <div className="  flex items-center mr-4">
+                          <DocumentTextIcon
+                            className=" h-5 w-5 text-gray-900"
+                            aria-hidden="true"
+                          />
+                          <span className="ml-2 flex-1 ">
+                            Not provided any document
+                          </span>
+                        </div>
+                      )}

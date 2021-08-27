@@ -1,0 +1,28 @@
+ 
+//Updating a field of an object which inside an array.And that array conatains multiple objects.
+
+const updateValue = (name, index) => (event) => {
+    event.preventDefault();
+    let newservice = service.map((item, i) => {
+      if (index == i) {
+        return { ...item, [name]: event.target.value };
+      } else {
+        return item;
+      }
+    });
+    setService(newservice);
+  };
+
+
+
+//Adding a value
+const [goals,setGoals]=useState()  
+ 
+const addHandler=(newGoal)=>{
+
+
+   setGoals(prev=>prev.concat(newGoal))
+
+}
+  
+  
